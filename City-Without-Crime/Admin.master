@@ -1,0 +1,187 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title></title>
+ 
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 183px;
+        }
+        .auto-style2 {
+            width: 100%;
+        }
+        .auto-style4 {
+        }
+        .auto-style8 {
+            width: 93px;
+            height: 88px;
+        }
+        .auto-style9 {
+            width: 110px;
+            height: 66px;
+            margin-bottom: 0px;
+        }
+        .auto-style10 {
+            width: 109px;
+            height: 99px;
+        }
+        .auto-style11 {
+            width: 83px;
+            height: 85px;
+        }
+        .auto-style12 {
+            width: 86px;
+            height: 47px;
+        }
+        .auto-style38 {
+            width: 22px;
+        }
+        .auto-style54 {
+            width: 223px;
+        }
+        .auto-style58 {
+            width: 199px;
+        }
+        .auto-style60 {
+            width: 226px;
+        }
+        .auto-style62 {
+            width: 204px;
+        }
+        .auto-style64 {
+            width: 1000px;
+        }
+        </style>
+</head>
+    <body style="background-color:lavender">
+    <form id="form1" runat="server">
+        <table style="width:100% ;padding:100px">
+            <tr>
+                <td class="auto-style1";style="width:20%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                <td class="auto-style64"style="width:60%">
+                    <div style="height:100%; width: 1000px;">
+ <div style="height:60px; background-color:lavender"> <marquee ><asp:Label ID="Label7" runat="server" Font-Bold="True" Font-Names="Footlight MT Light" style="Font-Size:60px" ForeColor="#660066" Text="CITY WITHOUT CRIME"></asp:Label></marquee></div>
+       <div style="height:300px;background-image:url('img/anigif.gif');border-color:darkgray;border-width:6px; border-top-left-radius:10px;border-top-right-radius:10px; width: 998px; margin-left: 0px;">
+      
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+       
+    </div>
+        <div style="height:25px; font-family: Verdana; font-size: x-large; width: 1000px;">
+           <asp:menu runat="server" BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Names="Cambria" Font-Size="Large" ForeColor="#000066" Orientation="Horizontal" RenderingMode="Table" StaticSubMenuIndent="10px" Width="100%" Height="30px" >
+                <DynamicHoverStyle BackColor="#B5C7DE" ForeColor="navy" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="0px" Font-Names="Cambria" Font-Size="Large" ForeColor="#000066" />
+                <DynamicMenuStyle BackColor="lavender" />
+                <DynamicSelectedStyle BackColor="" />
+                <Items>
+                          <asp:MenuItem Text="Complaint Received" Value="Complaint Received" NavigateUrl="~/AdmComplaintReceived.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Update News" Value="Update News">
+                        <asp:MenuItem NavigateUrl="~/AdmUpdateNews.aspx" Text="Update News" Value="Update News"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/AdmAddNews.aspx" Text="Add News" Value="Add News"></asp:MenuItem>
+                          </asp:MenuItem>
+                    <asp:MenuItem Text="Police Station" Value="Police Station">
+                        <asp:MenuItem Text="Add Police Station" Value="Add Police Station" NavigateUrl="~/AddPoliceStation.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Remove Police Station" Value="Remove Police Station" NavigateUrl="~/RemovePoliceStation.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/admlogout.aspx"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="lavender" Font-Size="Large" ForeColor="navy" Font-Names="Cambria" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="4px" Font-Names="Cambria" Font-Size="Large" ForeColor="#000066" />
+                <StaticSelectedStyle BackColor="" />
+                <StaticItemTemplate>
+                    <%# Eval("Text") %>
+                </StaticItemTemplate>
+            </asp:menu>
+            
+        </div>
+                        <div style="width:100%;height:10px"></div>
+        <div style="height:550px">
+            
+          
+ <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+         <div style="height:540px;overflow-x:hidden;overflow-y:auto" ></div>
+        </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+                      
+         <div style="height:230px;background-color:ThreeDDarkShadow;border-bottom-left-radius:20px;border-bottom-right-radius:20px">
+
+            <table class="auto-style2" style="width:100%">
+                <tr>
+                    <td class="auto-style38">&nbsp;</td>
+                    <td class="auto-style62">&nbsp;</td>
+                    <td class="auto-style58">
+                        &nbsp;</td>
+                    <td class="auto-style60">
+                        &nbsp;</td>
+                    <td class="auto-style54">
+                        &nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style38">&nbsp;</td>
+                    <td class="auto-style62">
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Calibri" Font-Size="Medium" Font-Underline="True" ForeColor="White" Text="Our Team Partners"></asp:Label>
+                    </td>
+                    <td class="auto-style4" colspan="2">
+                        &nbsp;</td>
+                    <td class="auto-style54">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style38">&nbsp;</td>
+                    <td class="auto-style62">&nbsp;&nbsp;&nbsp;
+                        <img alt="community" class="auto-style8" src="img/community.png" style="width:120px;height:120px" /></td>
+                    <td class="auto-style58">
+                        <img alt="creative group" class="auto-style9" src="img/creative.png" style="width:120px;height:120px; margin-left: 22px;" /></td>
+                    <td class="auto-style60">
+                        &nbsp;&nbsp;&nbsp;&nbsp; <img alt="shark sponsors" class="auto-style11" src="img/shark.png" style="width:120px; height:120px"/></td>
+                    <td class="auto-style54"><img alt="support group" class="auto-style12" src="img/support.png" style="width:120px;height:120px"/></td>
+                    <td><img alt="research team" class="auto-style10" src="img/research.png" style="width:120px; height:120px; margin-left: 0px; margin-right: 13px; margin-top: 3px;"/></td>
+                </tr>
+                <tr>
+                    <td class="auto-style38">
+                        &nbsp;</td>
+                    <td class="auto-style62">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="Label2" runat="server" Font-Names="Calibri" Font-Size="Small" ForeColor="White" Text="Community"></asp:Label>
+                    </td>
+                    <td class="auto-style58">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="Label3" runat="server" Font-Names="Calibri" Font-Size="Small" ForeColor="White" Text="Creative Group"></asp:Label>
+                    </td>
+                    <td class="auto-style60">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        <asp:Label ID="Label4" runat="server" Font-Names="Calibri" Font-Size="Small" ForeColor="White" Text="Shark Academy"></asp:Label>
+                    </td>
+                    <td class="auto-style54">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="Label5" runat="server" Font-Names="Calibri" Font-Size="Small" ForeColor="White" Text="Support Group"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:Label ID="Label6" runat="server" Font-Names="Calibri" Font-Size="Small" ForeColor="White" Text="Research Group"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+       
+   
+                </td>
+                <td style="width:20%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright © 2016. All Rights Reserved
+</body>
+
+</html>
